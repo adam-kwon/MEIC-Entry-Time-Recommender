@@ -1,0 +1,1 @@
+streamlit run trader.py --server.headless=true

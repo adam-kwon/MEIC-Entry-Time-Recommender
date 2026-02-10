@@ -1,0 +1,14 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+Strategies/
+!Strategies/.gitkeep
+util/
+i-gateway-460020-h9-458a29aa9565.json
+env/
+keys.py
+.csv_cache/
+*.csv
+*.parquet
+app_config.parquet
+.vscode
