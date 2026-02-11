@@ -59,7 +59,7 @@ def render_recommender_ui():
         st.number_input("Min Time Dist.", 5, 120, min_distance, 5, key='opt_min_time_distance', on_change=handler, help="Minimum time distance (in minutes) between selected entry times. Set to 0 to disable this constraint.")
 
     with cols[2]:
-        method, handler = create_config_handler(KEY_RECOMMENDER_OPTIMIZER, 'opt_metric', 'MAR', None)
+        method, handler = create_config_handler(KEY_RECOMMENDER_OPTIMIZER, 'opt_metric', 'PROFIT', None)
 
         if method is None:
             optimizer_idx = 1            

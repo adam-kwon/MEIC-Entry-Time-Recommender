@@ -18,7 +18,7 @@ from analysis.entry_time_recommender import run_entry_time_analysis, render_entr
 from rendering.ui_components import setup_ui_components
 
 if get_config(KEY_RECOMMENDER_OPTIMIZER) is None:
-    update_config(KEY_RECOMMENDER_OPTIMIZER, 'MAR')
+    update_config(KEY_RECOMMENDER_OPTIMIZER, 'PROFIT')
 if get_config(KEY_FORCE_COUNT) is None:
     update_config(KEY_FORCE_COUNT, 0)
 if get_config(KEY_MAX_ENTRY_TIMES) is None:
