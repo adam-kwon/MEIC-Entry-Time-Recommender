@@ -53,10 +53,10 @@ def render_recommender_ui():
 
     with cols[1]:
         correl_penalty, handler = create_config_handler(KEY_CORRELATION_PENALTY, 'opt_correlation_penalty', 1.5, float)
-        st.number_input("Corr. Penalty", 0.0, 5.0, correl_penalty, 0.1, key='opt_correlation_penalty', format="%.1f", on_change=handler, help="A penalty of 1.5 - 2.0 usually prevents 'over-stacking' correlated times.")
+        st.number_input("Corr. Penalty", 0.0, 50.0, correl_penalty, 0.1, key='opt_correlation_penalty', format="%.1f", on_change=handler, help="A penalty of 1.5 - 2.0 usually prevents 'over-stacking' correlated times.")
 
         min_distance, handler = create_config_handler(KEY_MIN_ENTRY_DISTANCE, 'opt_min_time_distance', 15, int)
-        st.number_input("Min Time Dist.", 0, 120, min_distance, 5, key='opt_min_time_distance', on_change=handler, help="Minimum time distance (in minutes) between selected entry times. Set to 0 to disable this constraint.")
+        st.number_input("Min Time Dist.", 5, 120, min_distance, 5, key='opt_min_time_distance', on_change=handler, help="Minimum time distance (in minutes) between selected entry times. Set to 0 to disable this constraint.")
 
     with cols[2]:
         method, handler = create_config_handler(KEY_RECOMMENDER_OPTIMIZER, 'opt_metric', 'MAR', None)
