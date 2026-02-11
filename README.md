@@ -6,7 +6,7 @@
 
 **Activate virtual environment (.bat is for Windows, so choose the appropriate script for your OS/Shell)**
 
-`.\\env\\Scripts\\activate.bat**`
+`.\\env\\Scripts\\activate.bat`
 
 **Install Dependencies** 
 
