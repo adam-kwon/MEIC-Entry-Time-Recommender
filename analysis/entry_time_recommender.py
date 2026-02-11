@@ -478,7 +478,7 @@ def render_entry_time_results(analysis_results: Dict):
     with col1:
         st.metric("Total P/L", f"${r['total_pl']:,.0f}")
     with col2:
-        st.metric(f"{config['optimization_metric']} Ratio", f"{r[metric_key]:.2f}")
+        st.metric(f"{config['optimization_metric']} Ratio (Normalized)", f"{r[metric_key]:.2f}")
     with col3:
         st.metric("CAGR", f"{r['cagr']*100:.1f}%")
     with col4:
@@ -554,7 +554,7 @@ def render_entry_time_results(analysis_results: Dict):
     )
     
     fig.update_xaxes(title_text="Number of Entry Times", row=2, col=1)
-    fig.update_yaxes(title_text=f"{config['optimization_metric']} Ratio", row=1, col=1)
+    fig.update_yaxes(title_text=f"{config['optimization_metric']} Ratio (Normalized)", row=1, col=1)
     fig.update_yaxes(title_text="Total P/L ($)", row=2, col=1)
     
     fig.update_layout(height=700, showlegend=False)
