@@ -43,7 +43,7 @@ def create_config_handler(config_key, widget_key, default_value, value_type=None
 
 def render_recommender_ui():
     st.title("MEIC Entry Time Curve Fitter")
-    st.caption("Make sure to sanitize the trade log and remove entry times you do not want considered.")
+    st.markdown("Make sure to sanitize the trade log and remove entry times you do not want considered. *Use at your own risk. Not financial advice, and provided for educational purposes only.*")
 
     cols = st.columns([0.2, 0.2, 0.2, 0.2])
 
